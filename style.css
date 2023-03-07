@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  
+  width: 100vw;
   font-family: 'Signika', sans-serif;
 }
 
@@ -40,14 +40,15 @@ nav ul li button {
   position: relative;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 
 #header {
   position: fixed;
   z-index: 10;
   height: 60px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,11 +127,19 @@ nav ul li button {
 }
 
 
+
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
 .section1 {
   margin: 0;
   padding: 0;
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   background: url(assets/Logo.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -145,12 +154,14 @@ nav ul li button {
   height: 100%;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20%;
 }
 
 .section1 .booked {
-  margin: 60px 0 0 80px;
+  margin: 60px 0 0;
+  width: max-content;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -182,7 +193,7 @@ nav ul li button {
 
 
 .section1 .short {
-  margin: 60px 80px 0 0;
+  margin: 60px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,8 +223,17 @@ nav ul li button {
 .section2 {
   margin: 0;
   padding: 50px 0 20px;
-  width: 100vw;
+  width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service {
+  margin: 0;
+  padding: 0;
+  width: 90%;
 }
 
 .service ul {
@@ -222,16 +242,16 @@ nav ul li button {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .service ul li {
   display: flex;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 22%;
+  height: auto;
 }
 
 .service ul li div {
@@ -239,13 +259,14 @@ nav ul li button {
   width: 100%;
 }
 .service ul li div img {
-  width: 200px;
+  width: 80%;
   height: auto;
 }
 
 .service ul li div h4{
-  font-size: 20px;
-  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0;
 }
 
 
@@ -256,18 +277,35 @@ nav ul li button {
   width: 100vw;
   text-align: center;
   background-color: #EFD77B;
-}
-
-.reason {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
+.reason {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.reason h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
 .reason .plain {
-  width: auto;
+  padding: 0;
+  width: 45vw;
   height: fit-content;
-  font-size: 22px;
-  margin: auto 50px;
+  display: flex;
+  justify-content: center;
   text-align: justify;
 }
 
@@ -285,7 +323,6 @@ nav ul li button {
 .reason .list ul li div {
   width: max-content;
   margin: 25px 20px;
-  padding-right: 40px;
   display: flex;
   align-items: center;
 }
@@ -294,13 +331,6 @@ nav ul li button {
   width: 50px;
   height: auto;
   margin-right: 20px;
-}
-
-.reason .list h4 {
-  font-size: 26px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
 }
 
 
@@ -314,13 +344,18 @@ nav ul li button {
   gap: 20px;
 }
 
+.section4 p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
 .section4 .visi {
-  width: 80vw;
+  width: 70vw;
   text-align: center;
 }
 
 .section4 .misi {
-  width: 80vw;
+  width: 70vw;
 }
 
 .section4 .misi h1 {
