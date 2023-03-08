@@ -557,7 +557,7 @@ nav ul li button {
 
 
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .mobile {
     display: block;
   }
