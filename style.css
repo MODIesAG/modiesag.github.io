@@ -5,6 +5,10 @@ body {
   font-family: 'Signika', sans-serif;
 }
 
+.desktop {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -56,7 +60,6 @@ nav ul li button {
   background-color: rgba(239, 215, 123, 0.7);
   transition: background-color 0.4s ease;
 }
-
 #header.scroll {
   background-color: rgba(239, 215, 123, 1);
 }
@@ -68,13 +71,11 @@ nav ul li button {
   display: flex;
   align-items: center;
   overflow: hidden;
-  
   background-color: transparent;
   color: black;
   border: none;
   outline: none;
 }
-
 .logo {
   position: relative;
   overflow: hidden;
@@ -85,14 +86,12 @@ nav ul li button {
   display: flex;
   justify-content: center;
 }
-
 .logo .arrow {
   position: absolute;
   margin: 8px;
   transform: rotate(45deg);
   width: 28px;
   height: 28px;
-  
   border-left: 11px solid black;
   border-top: 11px solid black;
 }
@@ -143,7 +142,6 @@ nav ul li button {
   background: url(assets/Logo.jpg) no-repeat center center;
   background-size: cover;
 }
-
 .blur {
   margin: 0;
   padding: 0;
@@ -158,7 +156,6 @@ nav ul li button {
   align-items: center;
   gap: 20%;
 }
-
 .section1 .booked {
   margin: 60px 0 0;
   width: max-content;
@@ -166,12 +163,10 @@ nav ul li button {
   flex-direction: column;
   gap: 30px;
 }
-
 .section1 .booked h2 {
   margin: 0;
   padding: 0;
 }
-
 .booked a {
   margin: 0;
   padding: 12px 20px;
@@ -185,12 +180,10 @@ nav ul li button {
   cursor: pointer;
   transition: color 0.4s linear;
 }
-
 .booked a:hover {
   color: black;
   background-color: rgba(239, 215, 123, 1);
 }
-
 
 .section1 .short {
   margin: 60px 0 0;
@@ -199,20 +192,17 @@ nav ul li button {
   align-items: center;
   gap: 10px;
 }
-
 .section1 .short img {
   height: 150px;
   width: auto;
   border: 2px solid white;
   border-radius: 5%;
 }
-
 .section1 .short h1 {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', sans-serif;
 }
-
 .section1 .short h3 {
   margin: 0;
   padding: 0;
@@ -229,13 +219,11 @@ nav ul li button {
   flex-direction: column;
   align-items: center;
 }
-
 .service {
   margin: 0;
   padding: 0;
   width: 90%;
 }
-
 .service ul {
   margin: 0;
   padding: 0;
@@ -246,14 +234,12 @@ nav ul li button {
   justify-content: center;
   align-items: flex-start;
 }
-
 .service ul li {
   display: flex;
   align-items: center;
   width: 22%;
   height: auto;
 }
-
 .service ul li div {
   height: fit-content;
   width: 100%;
@@ -262,13 +248,11 @@ nav ul li button {
   width: 80%;
   height: auto;
 }
-
 .service ul li div h4{
   font-size: 24px;
   font-weight: 400;
   margin: 20px 0;
 }
-
 
 
 .section3 {
@@ -282,7 +266,6 @@ nav ul li button {
   justify-content: center;
   align-items: center;
 }
-
 .reason {
   margin: 0;
   padding: 0;
@@ -292,7 +275,6 @@ nav ul li button {
   justify-content: center;
   gap: 50px;
 }
-
 .reason h4 {
   font-size: 24px;
   font-weight: 400;
@@ -313,20 +295,17 @@ nav ul li button {
   width: fit-content;
   height: fit-content;
 }
-
 .reason .list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .reason .list ul li div {
   width: max-content;
   margin: 25px 20px;
   display: flex;
   align-items: center;
 }
-
 .reason .list img {
   width: 50px;
   height: auto;
@@ -344,11 +323,6 @@ nav ul li button {
   gap: 20px;
 }
 
-.section4 p {
-  font-size: 24px;
-  font-weight: 400;
-}
-
 .section4 .visi {
   width: 70vw;
   text-align: center;
@@ -357,11 +331,13 @@ nav ul li button {
 .section4 .misi {
   width: 70vw;
 }
-
 .section4 .misi h1 {
   text-align: center;
 }
-
+.section4 p {
+  font-size: 24px;
+  font-weight: 400;
+}
 .section4 .misi ul {
   text-align: left;
 }
@@ -380,14 +356,12 @@ nav ul li button {
 .footer ul li button:hover {
   color: #EFD77B;
 }
-
 .footer .link-list {
   margin: 0 20px;
   padding: 10px;
   width: max-content;
   overflow: none;
 }
-
 .footer .link-list h4{
   margin: 0 0 8px 0;
   padding: 0;
@@ -395,20 +369,17 @@ nav ul li button {
   font-weight: 400;
   color: white;
 }
-
 .footer .link-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .footer .link-list ul li {
   margin: 6px 0 0;
   padding: 0;
   display: flex;
   flex-wrap: none;
 }
-
 .footer .link-list a {
   display: flex;
   align-items: center;
@@ -416,7 +387,6 @@ nav ul li button {
   width: fit-content;
   color: #a3bac2;
 }
-
 .footer .link-list a .icon {
   margin-right: 8px;
 }
@@ -429,7 +399,6 @@ nav ul li button {
   width: 100%;
   padding: 5px 0 30px;
 }
-
 .footer-1 .company {
   margin: 0 20px;
   padding: 0 10px;
@@ -438,7 +407,6 @@ nav ul li button {
   display: flex;
   align-items: center;
 }
-
 .footer-1 .company img {
   width: 100px;
   height: 100px;
@@ -454,13 +422,11 @@ nav ul li button {
   font-size: 33px;
   color: white;
 }
-
 .footer-1 .company a {
   margin: 0;
   padding: 0;
   color: #a3bac2;
 }
-
 .footer-1 .company a:hover {
   color: #EFD77B;
 }
@@ -470,7 +436,6 @@ nav ul li button {
   margin: 0;
   padding: 0;
 }
-
 .footer-2 h3 {
   margin: 0 30px;
   padding: 20px 0 0;
@@ -479,11 +444,11 @@ nav ul li button {
   color: white;
   border-top: 1px solid #EFD77B;
 }
-
 .footer-2 .list {
   display: flex;
   gap: 40px;
 }
+
 
 .footer-3 {
   margin: 0;
@@ -493,28 +458,31 @@ nav ul li button {
   align-items: center;
   background-color: #0F2027;
 }
-
-.footer-3 p {
-  margin: 0 20px;
-  padding: 0 10px;
-  font-family: sans-serif;
-  font-weight: light;
+.footer-3 li a,
+.footer-3 li button{
+  color: white;
 }
-
 .footer-3 button {
   border: none;
   outline: none;
   background-color: transparent;
 }
-
 .footer-3 p {
+  margin: 0 20px;
+  padding: 0 10px;
+  font-family: sans-serif;
+  font-weight: light;
   color: #a3bac2;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
-.footer-3 li a,
-.footer-3 li button{
-  color: white;
+.mobile {
+  display: none;
 }
+
 
 
 #scrollUpButton {
@@ -535,7 +503,245 @@ nav ul li button {
   height: 40px;
   opacity: 0.7;
 }
-
- #scrollUpButton:hover {
+#scrollUpButton:hover {
    background-color: #333; 
- }
+}
+
+
+
+@media(max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+  
+  #header {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #header div.btn-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+  }
+  #header .logo-text{
+    margin: 0 0 0 15px;
+  }
+  
+  #menu {
+    margin: 0 15px 0 0;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  #menu #bars {
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    width: 25px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  #menu #xmark {
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-size: 25px;
+  }
+  
+  #navbar {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    transition: height 5s;
+    border-top: 1px solid white;
+  }
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  #navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  #navbar ul li a {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .section1{
+    height: fit-content;
+  }
+  .section1 .blur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .booked {
+    padding-bottom: 100px;
+    order: 2;
+  }
+  .short {
+    text-align: center;
+    padding-top: 60px;
+    order: 1;
+  }
+  .short h1 {
+    font-size: 26px;
+  }
+  
+  .section2 .service {
+    padding: 50px 0 30px;
+  }
+  .section2 .service ul {
+    gap: 35px;
+  }
+  .section2 .service ul li {
+    width: 60%;
+  }
+  .section2 .service ul li h4 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .section3 .reason {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section3 .reason .plain {
+    margin: 20px 0 10px;
+    width: 85%;
+    text-align: left;
+  }
+  .section3 .reason .plain h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .section4 .visi {
+    width: 85%;
+  }
+  .section4 .misi {
+    width: 85%;
+    margin-left: -20px;
+  }
+  .section4 .visi p,
+  .section4 .misi ul li p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .footer {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-1 {
+    margin: 0 30px;
+    padding: 0;
+    width: calc(100% - 60px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footer-1 .company {
+    margin: 30px 0 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .footer-1 .company img {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-1 .company div {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .footer-1 .company div h1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 24px;
+  }
+  .footer-1 .company div a {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+  .footer-1 .link-list {
+    margin: 0 0 30px;
+    padding: 0;
+  }
+  
+  .footer-2 .list {
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 20px;
+  }
+  .footer-2 h3 {
+    font-size: 20px;
+  }
+  .footer-2 h4 {
+    font-size: 16px;
+  }
+  .footer-2 a {
+    font-size: 14px;
+  }
+  
+  .footer-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-3 nav {
+    width: calc(100% - 20px);
+    order: 1;
+  }
+  .footer-3 nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-3 a, 
+  .footer-3 button {
+    font-size: 16px;
+  }
+  .footer-3 p {
+    margin: 5px 0;
+    font-size: 14px;
+    order: 2;
+  }
+  
+  #scrollUpButton {
+    bottom: 40px;
+  }
+  
+  .desktop {
+    display: none;
+  }
+}

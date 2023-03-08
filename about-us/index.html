@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Tentang kami - Modies Artha Gemilang</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
@@ -20,7 +23,7 @@
       }
       
       .about-us {
-        margin: 110px 0 50px;
+        margin: 80px 0 50px;
         padding: 0;
         width: 90%;
         height: auto;
@@ -31,8 +34,21 @@
         text-align: center;
       }
       
+      .about-us h1 {
+        width: 100%;
+      }
+      
       .about-us p {
         font-size: 20px;
+      }
+      
+      .footer-3 {
+        justify-content: center;
+      }
+      @media(max-width: 767px){
+        .about-us p {
+          text-align: left;
+        }
       }
     </style>
   </head>
@@ -40,8 +56,8 @@
   <body>
     <div class="container">
       <div class="header" id="header">
-        <a href="" class="btn-logo">
-          <span class="logo">
+        <div class="btn-logo">
+          <span class="logo desktop">
             <div class="arrow"></div>
             <div class="text1">MODIes ARTHA</div>
             <div class="text2">GEMILANG</div>
@@ -50,12 +66,16 @@
           <span class="logo-text">
             MODIes ARTHA GEMILANG
           </span>
-        </a>
-        <nav>
+          <button class="mobile" id="menu">
+            <span id="bars"></span>
+            <p id="xmark">X</p>
+          </button>
+        </div>
+        <nav id="navbar">
           <ul>
             <li><a href="https://modiesag.github.io/">Beranda</a></li>
-            <li><a href="https://modiesag.github.io/about-us/">Tentang kami</a></li>
-            <li><a href="https://modiesag.github.io/catalog/">Katalog</a></li>
+            <li><a href="../catalog/">Katalog</a></li>
+            <li><a href="https://wa.me/6285883655964" target="_blank">Pesan</a></li>
           </ul>
         </nav>
       </div>
@@ -69,7 +89,7 @@
       <div class="footer">
         <div class="footer-1">
           <div class="company">
-            <img src="../assets/Logo.jpg" alt="" />
+            <img class="desktop" src="../assets/Logo.jpg" alt="" />
             <div>
               <h1>MODIes ARTHA GEMILANG</h1>
               <a href="https://maps.app.goo.gl/SLQaC8EX5Wb9Aea48" target="_blank">Jl. Dr. Setia Budi No.15, Pd. Kacang Tim., Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15226</a>
@@ -86,14 +106,35 @@
         </div>
         
         <div class="footer-3">
-          <p>copyright © 2023 - Modies Artha Gemilang - All rights reserved</p>
-          <nav><ul>
-            <li><a href="https://modiesag.github.io/about-us/">About us</a></li>
-            <li><a href="https://modiesag.github.io/catalog/">Catalog</a></li>
-          </ul></nav>
+          <p><span>copyright © 2023</span><span>-</span><span class="desktop">Modies Artha Gemilang -</span><span>All rights reserved</span></p>
         </div>
       </div>
       
     </div>
+    
+    <script type="text/javascript" charset="utf-8">
+      const navbar = document.getElementById('navbar');
+      const myButton = document.getElementById('menu');
+      const bars = document.getElementById('bars');
+      const xmark = document.getElementById('xmark');
+      
+      myButton.addEventListener('click', () => {
+        if (navbar.style.height === 'max-content') {
+          navbar.style.height = '0';
+          bars.style.display = 'block';
+          xmark.style.display = 'none';
+        } else {
+          navbar.style.height = 'max-content';
+          bars.style.display = 'none';
+          xmark.style.display = 'block';
+        }
+      });
+      
+      window.addEventListener("scroll", function (){
+        if (navbar.style.height === 'max-content'){
+          myButton.click();
+        }
+      });
+    </script>
   </body>
 </html>
