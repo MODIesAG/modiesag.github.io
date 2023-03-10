@@ -57,11 +57,8 @@ nav ul li button {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid white;
-  background-color: rgba(239, 215, 123, 0.7);
-  transition: background-color 0.4s ease;
-}
-#header.scroll {
   background-color: rgba(239, 215, 123, 1);
+  transition: background-color 0.4s ease;
 }
 
 .btn-logo {
@@ -655,86 +652,128 @@ nav ul li button {
     padding: 0;
   }
   .footer-1 {
-    margin: 0 30px;
+    margin: 0 20px;
     padding: 0;
-    width: calc(100% - 60px);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+    width: calc(100% - 40px);
+    align-items: center;
+    gap: 10px;
   }
   .footer-1 .company {
-    margin: 30px 0 0;
+    margin: 20px 0;
     padding: 0;
-    width: 100%;
+    width: 70%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: left;
     gap: 10px;
   }
   .footer-1 .company img {
     margin: 0;
     padding: 0;
+    width: 30px;
+    height: auto;
+    border-radius: 5%;
+    border: 2px solid white;
   }
   .footer-1 .company div {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
   }
   .footer-1 .company div h1 {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: 24px;
+    font-size: 12px;
   }
   .footer-1 .company div a {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: 16px;
+    font-size: 6px;
   }
   .footer-1 .link-list {
-    margin: 0 0 30px;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+  .footer-1 .link-list h4 {
+    font-size: 8px;
+    margin: 0;
     padding: 0;
   }
+  .footer-1 .link-list ul li {
+    margin: 2px 0 0;
+    padding: 0;
+  }
+  .footer-1 .link-list a {
+    font-size: 6px;
+  }
+  .footer-1 .link-list a .icon {
+    margin-right: 2px;
+  }
   
-  .footer-2 .list {
-    flex-direction: column;
-    gap: 5px;
-    padding-bottom: 20px;
+  .footer-2 {
+    padding: 10px 20px;
+    width: calc(100% - 40px);
   }
   .footer-2 h3 {
-    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 10px;
   }
-  .footer-2 h4 {
-    font-size: 16px;
+  .footer-2 .list {
+    flex-direction: row;
+    gap: 20px;
   }
-  .footer-2 a {
-    font-size: 14px;
+  .footer-2 .link-list {
+    margin: 0;
+    padding: 0;
+    width: max-content;
+  }
+  .footer-2 .link-list h4 {
+    font-size: 8px;
+  }
+  .footer-2 .link-list a {
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
   }
   
   .footer-3 {
-    flex-direction: column;
+    padding: 2px 20px;
+    width: calc(100% - 40px);
+    height: fit-content;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .footer-3 nav {
-    width: calc(100% - 20px);
-    order: 1;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
   }
-  .footer-3 nav ul {
+  .footer-3 nav ul,
+  .footer-3 nav ul li {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
   .footer-3 a, 
   .footer-3 button {
-    font-size: 16px;
+    font-size: 6px;
+    margin: 0;
+    padding: 1px 2px;
   }
   .footer-3 p {
-    margin: 5px 0;
-    font-size: 14px;
-    order: 2;
+    margin: 0;
+    padding: 0;
+    font-size: 5px;
   }
   
   #scrollUpButton {

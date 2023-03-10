@@ -5,7 +5,6 @@ const navbar = document.getElementById('navbar');
 const myButton = document.getElementById('menu');
 const bars = document.getElementById('bars');
 const xmark = document.getElementById('xmark');
-const header = document.getElementById("header");
 
 
 
@@ -24,12 +23,6 @@ myButton.addEventListener('click', () => {
 
 
 window.addEventListener("scroll", function (){
-  if (window.pageYOffset > 50){
-    header.classList.add("scroll");
-  }else{
-    header.classList.remove("scroll");
-  }
-  
   if (navbar.style.height === 'max-content'){
     myButton.click();
   }
