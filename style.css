@@ -309,7 +309,6 @@ nav ul li button {
   margin-right: 20px;
 }
 
-
 .section4 {
   margin: 0;
   padding: 50px 0 20px;
@@ -337,6 +336,31 @@ nav ul li button {
 }
 .section4 .misi ul {
   text-align: left;
+}
+
+
+.section5 {
+    text-align: center;
+    padding: 50px 0 20px;
+}
+.section5 h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.section5 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section5 ul li {
+    margin: 10px 20px;
+}
+.section5 ul li img {
+    width: auto;
+    height: 50px;
 }
 
 
@@ -646,7 +670,7 @@ nav ul li button {
     font-size: 20px;
     line-height: 30px;
   }
-  
+
   .footer {
     margin: 0;
     padding: 0;
